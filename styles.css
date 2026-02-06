@@ -773,6 +773,25 @@ p {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: var(--font-size-base);
+    transition: var(--transition);
+}
+
+.footer-link:hover {
+    color: var(--primary-color);
+}
+
 .footer p {
     margin: 0;
     font-size: var(--font-size-sm);
