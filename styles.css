@@ -602,6 +602,41 @@ p {
     transform: translateX(4px);
 }
 
+/* AI Tools expanded card */
+.ai-tools-card {
+    grid-column: span 1;
+}
+
+.ai-tools-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+}
+
+.ai-category h4 {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--spacing-sm);
+}
+
+.ai-tool-link {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: var(--spacing-lg);
+    transition: var(--transition);
+}
+
+.ai-tool-link:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
 .recommendations-disclaimer {
     margin-top: var(--spacing-2xl);
     padding: var(--spacing-lg);
