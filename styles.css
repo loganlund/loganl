@@ -616,25 +616,41 @@ p {
 
 .ai-category h4 {
     font-size: var(--font-size-sm);
-    font-weight: 600;
-    color: var(--text-muted);
+    font-weight: 700;
+    color: var(--text-color);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.ai-category {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
 }
 
 .ai-tool-link {
-    display: inline-block;
-    color: var(--primary-color);
+    display: block;
+    color: var(--text-color);
     text-decoration: none;
-    font-weight: 500;
-    margin-right: var(--spacing-lg);
+    font-weight: 600;
+    font-size: var(--font-size-base);
+    padding: var(--spacing-sm) 0;
     transition: var(--transition);
+    border-bottom: 1px solid transparent;
 }
 
 .ai-tool-link:hover {
-    color: var(--primary-hover);
-    text-decoration: underline;
+    color: var(--primary-color);
+    padding-left: var(--spacing-sm);
+}
+
+.ai-tool-link::before {
+    content: '→ ';
+    color: var(--primary-color);
+    opacity: 0.6;
 }
 
 .recommendations-disclaimer {
