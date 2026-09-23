@@ -28,3 +28,6 @@ npm-debug.log*
 
 # Dependencies (if added later)
 node_modules/
+
+# Claude Code worktrees
+.claude/worktrees/
