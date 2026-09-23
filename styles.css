@@ -444,6 +444,76 @@ p {
     box-shadow: 0 0 10px rgba(37, 99, 235, 0.3);
 }
 
+/* Tennis Feature */
+.tennis-feature {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+    padding: 3rem;
+    background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 30%, #f0f9ff 100%);
+    border-radius: var(--border-radius-lg);
+    border: 2px solid #86efac;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
+}
+
+.tennis-feature::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(34, 197, 94, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.tennis-feature-icon {
+    font-size: 5rem;
+    flex-shrink: 0;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.tennis-feature-content h3 {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: #166534;
+    margin-bottom: var(--spacing-md);
+}
+
+.tennis-feature-content p {
+    color: var(--text-muted);
+    font-size: var(--font-size-lg);
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .tennis-feature {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1.5rem;
+    }
+
+    .tennis-feature-content h3 {
+        font-size: var(--font-size-2xl);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .tennis-feature {
+        background: linear-gradient(135deg, #052e16 0%, #14532d 30%, #1e293b 100%);
+        border-color: #16a34a;
+    }
+
+    .tennis-feature-content h3 {
+        color: #86efac;
+    }
+}
+
 /* Hobbies Section */
 .hobbies-grid {
     display: grid;
